@@ -56,6 +56,6 @@ class SuiteCrmModuleInstaller extends LibraryInstaller
 
     protected function getVendorDirForAsset(PackageInterface $package, $asset)
     {
-        return $this->getInstallPath($package) . '/modules';
+        return sprintf('%s/%s', $this->getInstallPath($package), $asset);
     }
 }
