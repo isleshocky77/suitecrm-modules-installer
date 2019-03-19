@@ -1,0 +1,31 @@
+{
+  "name": "isleshocky77/suitecrm-modules-installer",
+  "description": "Composer type for installing SuiteCrm Modules",
+  "keywords": [ "suitecrm", "modules", "composer" ],
+  "homepage": "https://github.com/isleshocky77/suitecrm-modules-installer",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Stephen Ostrow",
+      "email": "stephen@ostrow.tech",
+      "homepage": "http://ostrow.tech",
+      "role": "Developer"
+    }
+  ],
+  "type": "composer-plugin",
+  "autoload": {
+    "psr-4": {
+      "isleshocky77\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "isleshocky77\\Composer\\SuiteCrmModuleInstallerPlugin"
+  },
+  "require": {
+    "composer-plugin-api": "^1.0",
+    "symfony/filesystem": "^3.4 || ^4.0"
+  },
+  "require-dev": {
+    "composer/composer": "^1.3"
+  }
+}
