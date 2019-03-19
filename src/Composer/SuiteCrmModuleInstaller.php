@@ -33,11 +33,16 @@ class SuiteCrmModuleInstaller extends LibraryInstaller
         $filesystem = new Filesystem();
 
         foreach (self::$installableAssets as $asset) {
-            if (!$filesystem->exists($this->getVendorDirForAsset($package, $asset))) {
+
+            $assetInVendor = $this->getVendorDirForAsset($package, $asset);
+            $assetInInstallation = $this->getInstallationDirForAsset($asset);
+
+            if (!$filesystem->exists($assetInVendor)) {
                 continue;
             }
 
-            $filesystem->mirror($this->getVendorDirForAsset($package, $asset), $this->getInstallationDirForAsset($asset));
+            $this->io->write(sprintf('Mirroring from "%s" to "%s"', $assetInVendor, $assetInInstallation));
+            $filesystem->mirror($assetInVendor, $assetInInstallation);
         }
     }
 
