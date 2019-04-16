@@ -12,6 +12,7 @@ class SuiteCrmModuleInstaller extends LibraryInstaller
     protected static $installableAssets = [
         'custom',
         'modules',
+        'Api',
     ];
 
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
