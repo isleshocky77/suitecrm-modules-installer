@@ -1,5 +1,5 @@
 {
-  "name": "isleshocky77/suitecrm-modules-installer",
+  "name": "dolpox/suitecrm-modules-installer",
   "description": "Composer type for installing SuiteCrm Modules",
   "keywords": [ "suitecrm", "modules", "composer" ],
   "homepage": "https://github.com/isleshocky77/suitecrm-modules-installer",
@@ -15,11 +15,11 @@
   "type": "composer-plugin",
   "autoload": {
     "psr-4": {
-      "isleshocky77\\": "src/"
+      "dolpox\\": "src/"
     }
   },
   "extra": {
-    "class": "isleshocky77\\Composer\\SuiteCrmModuleInstallerPlugin"
+    "class": "dolpox\\Composer\\SuiteCrmModuleInstallerPlugin"
   },
   "require": {
     "composer-plugin-api": "^1.0",
@@ -27,5 +27,6 @@
   },
   "require-dev": {
     "composer/composer": "^1.3"
-  }
+  },
+  "minimum-stability": "dev"
 }
