@@ -1,6 +1,6 @@
 <?php
 
-namespace isleshocky77\Composer;
+namespace dolpox\Composer;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
@@ -13,6 +13,7 @@ class SuiteCrmModuleInstaller extends LibraryInstaller
         'custom',
         'modules',
         'Api',
+        'lib',
     ];
 
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)

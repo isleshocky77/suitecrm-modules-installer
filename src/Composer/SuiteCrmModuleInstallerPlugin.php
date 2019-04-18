@@ -1,6 +1,6 @@
 <?php
 
-namespace isleshocky77\Composer;
+namespace dolpox\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
